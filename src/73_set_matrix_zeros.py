@@ -3,6 +3,7 @@ from typing import List
 class Solution:
     def setZeroes(self, matrix):
         is_row = is_col = False
+        
         for j in range(len(matrix[0])):
             if(matrix[0][j] == 0):
                 is_row = True
