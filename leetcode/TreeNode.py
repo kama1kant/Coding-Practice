@@ -7,7 +7,6 @@ class TreeNode:
     def __repr__(self):
         return "TreeNode(val=" + str(self.val) + ", left={" + str(self.left) + ", right={" + str(self.right) + "})"
 
-
 def deserialize(string):
     if string == '{}':
         return None
