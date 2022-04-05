@@ -29,3 +29,23 @@ class Solution:
 sol = Solution()
 output = sol.minRemoveToMakeValid("())()(((")
 print(output)
+
+# New
+# class Solution:
+#     def minRemoveToMakeValid(self, s: str) -> str:
+#         stack = []
+#         for i, c in enumerate(s):
+#             if c == '(' or c == ')':
+#                 if c == ')' and len(stack) > 0 and s[stack[-1]] == '(':
+#                     stack.pop()
+#                 else:
+#                     stack.append(i)
+#         ans = ''
+#         for i, c in enumerate(s):
+#             if i not in stack:
+#                 ans += c
+#         return ans
+
+
+# sol = Solution()
+# print(sol.minRemoveToMakeValid('lee(t(c)o)de)'))
